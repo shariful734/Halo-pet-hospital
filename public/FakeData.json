@@ -1,0 +1,56 @@
+[
+    {
+        "serviceName": "Vaccinations",
+        "id": 1,
+        "serviceImg": "https://2dc0so10myqn3tu4bf1pz5x0-wpengine.netdna-ssl.com/wp-content/uploads/2021/09/petvaccinesrabies-1024x725.jpg",
+        "description": "Pet vaccines exist to prevent your pet from falling ill. They provide immunity from a range of infectious diseases that can affect both humans and animals. In order to be effective, vaccines need to contain an agent similar to the microorganism that causes the disease",
+        "price": 280,
+        "doctorName": "Martha Healy",
+        "doctorImg": "https://www.pngitem.com/pimgs/m/455-4554771_doctor-png-female-doctor-transparent-background-png-download.png"
+    },
+    {
+        "serviceName": "Senior Pet Care",
+        "id": 2,
+        "serviceImg": "https://i3e9n3c9.stackpathcdn.com/wp-content/uploads/2020/10/senior-pet-care-strip1.jpg",
+        "description": "Whether you have watched your pet age or you have adopted an older pet, senior pet care is very different than caring for a younger animal. Correct senior pet carecan increase their lifespan and ensure further comfort.",
+        "price": 249,
+        "doctorName": "John Franklin",
+        "doctorImg": "https://www.seekpng.com/png/detail/8-86599_best-free-doctors-and-nurses-png-icon-doctor.png"
+    },
+    {
+        "serviceName": "Breeding Services",
+        "id": 3,
+        "serviceImg": "https://www.thesprucepets.com/thmb/1wyPjExkZax1BLADmrkGn8BZNVI=/2121x1193/smart/filters:no_upscale()/Cats-cuddling-GettyImages-154502253-5887e0e43df78c2ccdb61dc0.jpg",
+        "description": "Our clinic offers a range of assisted reproductive services for all kinds of animals. including embryo transfer and foetal sexing. Embryo transfer involves transplanting an embryo from a donor mare to a recipient….",
+        "price": 290,
+        "doctorName": "Julie Herzigova",
+        "doctorImg": "https://www.nicepng.com/png/detail/7-74994_free-png-doctor-png-images-transparent-doctor-images.png"
+    },
+    {
+        "serviceName": "Diagnosis",
+        "id": 4,
+        "serviceImg": "https://pawsandclawsanimalhospital.com/wp-content/uploads/2019/02/dog-with-vet-11-1068x713-1-1068x675.jpg",
+        "description": "We use advanced diagnostic equipment, including digital radiography, electrocardiograms and digital otoscopy that also give our vets a powerful set of tools for finding and solving animal health care problems fast.",
+        "price": 150,
+        "doctorName": "John Demin",
+        "doctorImg": "https://www.blogoval.com/wp-content/uploads/2021/07/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg"
+    },
+    {
+        "serviceName": "Surgery",
+        "id": 5,
+        "serviceImg": "https://www.ingleside.com/sites/default/files/dog-surgery.jpg",
+        "description": "At Prestige Animal Hospital, we understand that it can be frightening to receive the news that a dog surgery is being recommended. It is important to understand that it is a recommendation that our veterinarians do not take lightly. If one of our veterinarians is recommending a surgical procedure, rest assured that it is with the best interest of your dog in mind.",
+        "price": 350,
+        "doctorName": "Sam Martin",
+        "doctorImg": "https://st2.depositphotos.com/4196725/8330/i/450/depositphotos_83302214-stock-photo-happy-doctor-man-smiling.jpg"
+    },
+    {
+        "serviceName": "Dental Care",
+        "id": 6,
+        "serviceImg": "https://linwoodpethospital.com/wp-content/uploads/2019/01/pet-dental-care.jpg",
+        "description": "Dental health is a very important part of your pet's overall health, and dental problems can cause, or be caused by, other health problems. Your pet's teeth and gums should be checked at least once a year by your veterinarian to check for early signs of a problem and to keep your pet's mouth healthy",
+        "price": 220,
+        "doctorName": "Ammy Jhones",
+        "doctorImg": "https://t3.ftcdn.net/jpg/01/96/90/36/240_F_196903690_G74weIn0h3WbX1fGFWhpr9bGMzhS9arG.jpg"
+    }
+]
