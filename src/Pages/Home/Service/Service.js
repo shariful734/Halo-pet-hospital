@@ -1,7 +1,7 @@
 import './Service.css'
 
 import React from 'react';
-import { Card, Col } from 'react-bootstrap';
+import { Button, Card, Col } from 'react-bootstrap';
 
 const Service = ({ service }) => {
 
@@ -16,11 +16,10 @@ const Service = ({ service }) => {
                         <Card.Text>
                             {description.slice(0, 100)}
                         </Card.Text>
+                        <Button variant="success">See Details</Button>
                     </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
                 </Card>
+
             </Col>
         </div>
     );

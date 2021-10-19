@@ -9,11 +9,11 @@ const Footer = () => {
                 <h3 className="text-white pb-3">Contact Information</h3>
 
                 <address>
-                    <h5>Sherpur Road, Nabiganj, Habiganj</h5>
+                    <h5><i class="fas fa-map-marker-alt"></i> Sherpur Road, Nabiganj, Habiganj</h5>
 
-                    <h5> 0126183662</h5>
+                    <h5><i class="fas fa-phone"></i> 0126183662</h5>
 
-                    <h5> <a className="link" href="http://google.com"> Shoriful@gmail.com</a> </h5>
+                    <h5><i class="far fa-envelope"></i> <a className="link" href="http://google.com"> Shoriful@gmail.com</a> </h5>
 
                 </address>
 
