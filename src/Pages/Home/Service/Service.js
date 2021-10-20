@@ -2,10 +2,11 @@ import './Service.css'
 
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Service = ({ service }) => {
 
-    const { serviceName, serviceImg, description } = service;
+    const { serviceName, serviceImg, description, id } = service;
     return (
         <div>
             <Col>
@@ -16,7 +17,7 @@ const Service = ({ service }) => {
                         <Card.Text>
                             {description.slice(0, 100)}
                         </Card.Text>
-                        <Button variant="success">See Details</Button>
+                        <Link to={`/serviceDetail/${id}`}> <Button variant="success">See Details</Button> </Link>
                     </Card.Body>
                 </Card>
 

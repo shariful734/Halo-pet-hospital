@@ -8,6 +8,11 @@ const Founder = () => {
     return (
         <div className="mx-5 my-5">
 
+            <div className="text-center">
+                <h1>Our Founders</h1>
+                <p>Our founders have made possible who we are now</p>
+            </div>
+
             <Row xs={1} md={2} xl={2} className="g-4">
 
                 <Col>
