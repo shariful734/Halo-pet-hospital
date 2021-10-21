@@ -13,6 +13,9 @@ import SignUp from './Pages/SignUp/SignUp';
 import AuthProvider from './context/AuthProvider';
 
 import ServiceDetails from './Pages/serviceDetail/ServiceDetail/ServiceDetails';
+import AboutUs from './Pages/AboutUs/AboutUs';
+import ToPetOwner from './Pages/ToPetOwner/ToPetOwner';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -31,6 +34,13 @@ function App() {
 
             <Route path="/Home">
               <Home></Home>
+            </Route>
+            <PrivateRoute path="/ToPetOwner">
+              <ToPetOwner></ToPetOwner>
+            </PrivateRoute>
+
+            <Route path="/AboutUs">
+              <AboutUs></AboutUs>
             </Route>
 
             <Route path="/Login">
