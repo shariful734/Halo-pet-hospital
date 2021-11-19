@@ -51,9 +51,9 @@ function App() {
               <SignUp></SignUp>
             </Route>
 
-            <Route path="/serviceDetail/:serviceId">
+            <PrivateRoute path="/serviceDetail/:serviceId">
               <ServiceDetails></ServiceDetails>
-            </Route>
+            </PrivateRoute>
 
             <Route path="*">
               <NotFound></NotFound>
