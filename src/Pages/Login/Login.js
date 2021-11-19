@@ -1,42 +1,65 @@
 import React from 'react';
-import { Form, Button } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { useForm } from 'react-hook-form';
+import { Alert, Spinner } from 'react-bootstrap';
+import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import './Login.css'
 
 
 const Login = () => {
 
-    const { signInUsingGoogle, handleLogin } = useAuth();
+    const { allContext } = useAuth();
+
+    const { user, login, isLoading, authError, signInUsingGoogle } = allContext;
+
+    const location = useLocation();
+    const history = useHistory();
+
+    const handleGoogleSignIn = () => {
+        signInUsingGoogle(location, history)
+    }
+
+    const { register, handleSubmit, reset } = useForm();
+
+    const onSubmit = data => {
+        login(data.email, data.password, location, history)
+        console.log(data.email);
+        reset();
+    }
 
 
 
     return (
-        <div className="container text-center my-5 w-25">
+        <div className="container common text-center my-5 w-75">
 
             <h1>Please Login</h1>
 
-            <Form onSubmit={handleLogin} >
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
-                    <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                    </Form.Text>
-                </Form.Group>
+            <form onSubmit={handleSubmit(onSubmit)}>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" />
-                </Form.Group>
+                <input {...register("email",)} placeholder="your email" />
+                <input type="password" {...register("password",)} placeholder="password" />
 
-                <Button variant="primary" type="submit">
-                    Submit
-                </Button>
-            </Form>
+                <button className="btn-primary mt-3 px-5 py-1 " type="submit" >Login</button>
+
+                {
+                    isLoading && <Spinner animation="border" variant="danger" />
+                }
+            </form>
 
             <NavLink to="/SignUp"> <h5 className="p-3">New to Halo Animal Website? <br /> Sign Up Now </h5></NavLink>
 
-            <button onClick={signInUsingGoogle} className="btn btn-warning m-3">Sign In With Google</button>
+            <button onClick={handleGoogleSignIn} className="btn  btn-warning">Sign In With Google</button>
+
+            {
+                user?.email && <Alert variant="info">
+                    user login successfully
+                </Alert>
+            }
+            {
+                authError && <Alert variant="danger">
+                    {authError}
+                </Alert>
+            }
 
         </div>
     );

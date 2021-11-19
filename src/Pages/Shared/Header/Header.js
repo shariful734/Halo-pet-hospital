@@ -7,7 +7,9 @@ import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 const Header = () => {
-    const { user, logout } = useAuth();
+    const { allContext } = useAuth();
+    const { user, logOut } = allContext;
+
 
     return (
 
@@ -21,10 +23,10 @@ const Header = () => {
                             <NavLink className="me-4 text-white link" to="/Home">Home</NavLink>
                             <NavLink className="me-4 text-white link" to="/ToPetOwner">Pet Owners</NavLink>
                             <NavLink className="me-4 text-white link" to="/AboutUs">About Us</NavLink>
-                            <NavLink className="me-4 text-white link" to="/SignUp">SignUp</NavLink>
+
                             <NavLink className="me-4 text-white link" to="/Login">Login</NavLink>
-                            <span className="user-name me-4">  {user.displayName}</span>
-                            {user.email && <button className="logout-button" onClick={logout}>Log Out</button>}
+                            <span className="user-name me-4">  {user?.displayName}</span>
+                            {user?.email && <button className="logout-button" onClick={logOut}>Log Out</button>}
                         </Navbar.Collapse>
 
 
